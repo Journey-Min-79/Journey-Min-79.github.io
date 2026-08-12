@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://journey-min-79.github.io/sitemap.xml
