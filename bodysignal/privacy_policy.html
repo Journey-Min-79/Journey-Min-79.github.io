@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BodySignal Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8f6;
+      --surface: #ffffff;
+      --text: #17201c;
+      --muted: #5c6862;
+      --line: #dbe2dd;
+      --accent: #127c6f;
+      --accent-soft: #e5f3ef;
+      --warn: #8a4b12;
+      --warn-bg: #fff4e3;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101413;
+        --surface: #181f1d;
+        --text: #eef4f1;
+        --muted: #a9b8b1;
+        --line: #2b3632;
+        --accent: #6fd0bd;
+        --accent-soft: #18342f;
+        --warn: #f0bf7a;
+        --warn-bg: #2d2417;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 18px 56px;
+    }
+
+    header {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 34px 0 10px;
+      font-size: 22px;
+      line-height: 1.3;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      font-size: 17px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 8px 0 16px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .language-switch {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 9px 14px;
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button[aria-pressed="true"] {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+      margin: 18px 0;
+    }
+
+    .notice {
+      border: 1px solid color-mix(in srgb, var(--warn) 45%, transparent);
+      background: var(--warn-bg);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 16px 0;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 14px 0 18px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 640px;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--accent-soft);
+      color: var(--text);
+    }
+
+    .lang-panel[hidden] {
+      display: none;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: 13px;
+      padding: 12px 2px 0;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        color: #000000;
+      }
+
+      main {
+        max-width: none;
+        padding: 0;
+      }
+
+      header,
+      section {
+        border: 0;
+        padding: 0;
+      }
+
+      .language-switch {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1 data-i18n="title">BodySignal 개인정보처리방침</h1>
+      <p class="meta" data-i18n="updated">최종 업데이트: 2026년 8월 16일</p>
+      <p class="meta">Developer: journey · <a href="mailto:mintwin79@gmail.com">mintwin79@gmail.com</a></p>
+      <div class="language-switch" aria-label="Language">
+        <button type="button" id="lang-ko" data-lang-button="ko" aria-pressed="true">한국어</button>
+        <button type="button" id="lang-en" data-lang-button="en" aria-pressed="false">English</button>
+      </div>
+    </header>
+
+    <article id="policy-ko" class="lang-panel" lang="ko">
+      <section>
+        <h2>1. 개요</h2>
+        <p>BodySignal은 건강 데이터, 감정 기록, 생활 기록을 사용자의 기기 안에서 분석하여 스트레스와 회복 상태를 참고용으로 보여주는 웰니스 앱입니다.</p>
+        <p>BodySignal은 의료기기, 진단 서비스, 치료 서비스가 아닙니다. 앱의 점수, 알림, 코칭, 리포트는 건강 관리를 돕기 위한 참고 정보이며 의학적 진단, 치료, 질병 예방 또는 응급 판단을 대신하지 않습니다. 증상이 심하거나 지속되는 경우 의료 전문가에게 문의하십시오.</p>
+      </section>
+
+      <section>
+        <h2>2. 처리하는 데이터</h2>
+        <p>앱 기능 사용 여부와 권한 허용 여부에 따라 다음 데이터가 처리될 수 있습니다.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>분류</th>
+                <th>예시</th>
+                <th>사용 목적</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>건강 및 피트니스 데이터</td>
+                <td>걸음 수, 심박수, 안정시 심박수, 심박변이도, 수면, 호흡수, 체온, 운동 기록, 걷기 심박수</td>
+                <td>스트레스/회복 점수 계산, 추세 표시, 알림 판단, 개인화된 인사이트 생성</td>
+              </tr>
+              <tr>
+                <td>사용자 입력 기록</td>
+                <td>감정, 컨디션, 생활 태그, 메모, 행동 완료 여부</td>
+                <td>일일 기록, 원인 분석, 리포트, 로컬 기록 관리</td>
+              </tr>
+              <tr>
+                <td>마이크 및 음성 입력</td>
+                <td>사용자가 음성 입력을 선택한 경우의 음성 인식 결과</td>
+                <td>기록 입력 보조. 앱은 원본 음성 파일을 자체 서버에 저장하지 않습니다.</td>
+              </tr>
+              <tr>
+                <td>알림 및 기기 상태</td>
+                <td>알림 권한 상태, 부팅 후 알림/모니터링 복원, Wear OS 또는 watchOS 연동 상태</td>
+                <td>리마인더, 웰니스 알림, 워치 연동, 알림 중복 방지</td>
+              </tr>
+              <tr>
+                <td>광고 관련 데이터</td>
+                <td>Google AdMob SDK가 처리하는 광고 식별자, 광고 성과, 진단 정보</td>
+                <td>광고 표시 및 광고 품질 측정. 세부 처리는 Google 정책의 적용을 받습니다.</td>
+              </tr>
+              <tr>
+                <td>AI 코칭 데이터</td>
+                <td>사용자가 미리보기 확인 후 전송한 점수, 원인, 기록 요약, 질문</td>
+                <td>선택적 AI 코칭 응답 생성</td>
+              </tr>
+              <tr>
+                <td>앱 및 진단 데이터</td>
+                <td>앱 버전, 언어 설정, 내보내기 파일, 오류 상황에서 필요한 최소 진단 정보</td>
+                <td>앱 운영, 문의 대응, 기능 개선, 데이터 내보내기</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. 건강 데이터 접근</h2>
+        <p>Android에서는 Health Connect, Wear OS에서는 Health Services 또는 기기 간 Data Layer, iOS에서는 HealthKit을 통해 사용자가 허용한 건강 데이터만 읽습니다. Android 앱은 Health Connect 권한 화면과 권한 사용 설명 화면을 제공합니다.</p>
+        <p>백그라운드 건강 데이터 접근 또는 워치 모니터링이 켜진 경우, 앱은 사용자가 앱을 직접 보고 있지 않을 때도 알림 판단과 동기화를 위해 필요한 건강 데이터를 처리할 수 있습니다. 이 기능은 사용자가 권한을 허용하고 관련 설정을 켠 경우에만 작동합니다.</p>
+        <p>사용자는 언제든지 Android 설정, Health Connect, Wear OS, iOS 건강 앱 또는 앱 내 설정에서 권한을 해제할 수 있습니다.</p>
+      </section>
+
+      <section>
+        <h2>4. 저장 위치와 외부 전송</h2>
+        <p>BodySignal의 기본 동작은 로컬 우선입니다. 건강 데이터 캐시, 점수, 기록, 설정은 사용자의 기기에 저장됩니다. Android 백업 및 기기 전송 규칙에서는 앱 데이터베이스, 공유 설정, 파일, 외부 저장소 데이터를 백업/전송 대상에서 제외하도록 설정되어 있습니다.</p>
+        <h3>외부로 전송될 수 있는 경우</h3>
+        <ul>
+          <li>사용자가 AI 코칭 기능을 설정하고 미리보기 확인 후 요청하는 경우, 선택된 요약 데이터가 사용자가 설정한 AI 제공자 또는 OpenAI API로 전송됩니다.</li>
+          <li>Google AdMob을 사용하는 릴리즈 빌드에서는 광고 SDK가 광고 제공 및 측정을 위해 데이터를 처리할 수 있습니다.</li>
+          <li>사용자가 CSV, PDF, 이미지 리포트 등을 공유할 때, 선택한 공유 대상 앱으로 파일 또는 텍스트가 전달될 수 있습니다.</li>
+          <li>사용자가 이메일 문의를 보내는 경우, 이메일 내용과 주소가 메일 서비스 제공자에게 전달됩니다.</li>
+          <li>전화와 워치가 연동된 경우, 점수, 설정, 알림 이벤트, 빠른 기록 요청이 사용자의 기기 사이에서 전달될 수 있습니다.</li>
+        </ul>
+        <p>BodySignal은 개인 건강 데이터를 판매하지 않습니다.</p>
+      </section>
+
+      <section>
+        <h2>5. 권한 사용</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>권한</th>
+                <th>사용 이유</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Health Connect / HealthKit / Health Services</td>
+                <td>건강 데이터 동기화, 점수 계산, 추세 분석, 워치 기반 웰니스 알림</td>
+              </tr>
+              <tr>
+                <td>ACTIVITY_RECOGNITION</td>
+                <td>걸음 수와 움직임 기반 분석, 운동/움직임 상황에서 알림 오탐 방지</td>
+              </tr>
+              <tr>
+                <td>BODY_SENSORS 및 BODY_SENSORS_BACKGROUND</td>
+                <td>Wear OS 기기에서 심박 기반 모니터링과 백그라운드 웰니스 알림 지원</td>
+              </tr>
+              <tr>
+                <td>RECORD_AUDIO</td>
+                <td>사용자가 선택한 음성 입력 기능 제공</td>
+              </tr>
+              <tr>
+                <td>POST_NOTIFICATIONS</td>
+                <td>리마인더, 웰니스 알림, 워치/폰 알림 표시</td>
+              </tr>
+              <tr>
+                <td>RECEIVE_BOOT_COMPLETED</td>
+                <td>기기 재시작 후 리마인더와 모니터링 상태 복원</td>
+              </tr>
+              <tr>
+                <td>INTERNET</td>
+                <td>광고 표시, 선택적 AI 코칭 요청, 외부 정책/문의 링크 열기</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>6. 보관 및 삭제</h2>
+        <p>앱 데이터는 사용자가 삭제하거나 앱을 제거할 때까지 기기에 보관됩니다. 앱 내 데이터 초기화 기능을 사용하면 로컬 기록, 건강 데이터 캐시, 점수, 설정 등 앱 데이터가 삭제됩니다. Health Connect, HealthKit 또는 워치 플랫폼에 원래 저장된 원본 데이터는 해당 플랫폼의 설정에서 관리해야 합니다.</p>
+        <p>내보내기 또는 공유를 위해 생성된 임시 파일은 공유 후 정리되도록 설계되어 있으나, 사용자가 공유 대상 앱에 전달한 파일은 해당 앱의 정책과 사용자의 선택에 따라 보관될 수 있습니다.</p>
+      </section>
+
+      <section>
+        <h2>7. 보안</h2>
+        <p>앱은 가능한 범위에서 운영체제의 권한 시스템, 앱 샌드박스, 보안 저장소, 전송 구간 암호화를 사용합니다. 사용자가 AI 제공자 또는 외부 공유 대상을 선택하는 경우, 해당 제공자의 보안 및 개인정보 처리 방식도 함께 적용됩니다.</p>
+      </section>
+
+      <section>
+        <h2>8. 아동 개인정보</h2>
+        <p>BodySignal은 아동을 대상으로 설계된 앱이 아닙니다. 관련 법령상 보호가 필요한 아동의 개인정보가 앱에 입력되었다고 판단되는 경우 아래 문의처로 연락해 주십시오.</p>
+      </section>
+
+      <section>
+        <h2>9. 제3자 서비스</h2>
+        <ul>
+          <li>Google Health Connect, Health Services, Wear OS, HealthKit: 건강 데이터 권한 및 기기 연동</li>
+          <li>Google AdMob: 광고 제공 및 광고 측정</li>
+          <li>OpenAI API 또는 사용자가 설정한 AI 제공자: 선택적 AI 코칭</li>
+          <li>운영체제 공유 기능 및 이메일 앱: 사용자가 직접 선택한 데이터 공유와 문의</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>10. 변경</h2>
+        <p>이 개인정보처리방침은 앱 기능, 법령, 플랫폼 정책 변경에 따라 업데이트될 수 있습니다. 중요한 변경이 있는 경우 앱 또는 배포 페이지를 통해 알릴 수 있습니다.</p>
+      </section>
+
+      <section>
+        <h2>11. 문의</h2>
+        <p>개인정보 관련 문의, 데이터 삭제 요청, 앱 사용 문의는 아래로 연락해 주십시오.</p>
+        <p>Developer: journey<br>Email: <a href="mailto:mintwin79@gmail.com">mintwin79@gmail.com</a></p>
+        <div class="notice">이 문서는 앱의 실제 기능을 기준으로 작성된 개인정보처리방침 초안입니다. 사업자 정보, 관할 법령, 배포 국가, 광고/AI 제공자 설정에 맞춰 최종 검토 후 게시하십시오.</div>
+      </section>
+    </article>
+
+    <article id="policy-en" class="lang-panel" lang="en" hidden>
+      <section>
+        <h2>1. Overview</h2>
+        <p>BodySignal is a wellness app that analyzes health data, emotion logs, and lifestyle records on the user's device to provide reference information about stress and recovery.</p>
+        <p>BodySignal is not a medical device, diagnostic service, or treatment service. Scores, alerts, coaching, and reports are wellness references only and do not replace medical diagnosis, treatment, disease prevention, or emergency judgement. If symptoms are severe or persistent, please seek professional medical advice.</p>
+      </section>
+
+      <section>
+        <h2>2. Data We Process</h2>
+        <p>Depending on the features you use and the permissions you grant, the app may process the following data.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Examples</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Health and fitness data</td>
+                <td>Steps, heart rate, resting heart rate, heart rate variability, sleep, respiratory rate, body temperature, exercise records, walking heart rate</td>
+                <td>Stress/recovery scoring, trend display, alert evaluation, personalized insights</td>
+              </tr>
+              <tr>
+                <td>User-entered records</td>
+                <td>Emotions, condition check-ins, lifestyle tags, memos, action completion status</td>
+                <td>Daily records, cause analysis, reports, local history management</td>
+              </tr>
+              <tr>
+                <td>Microphone and voice input</td>
+                <td>Speech recognition results when the user chooses voice input</td>
+                <td>Assisting record entry. The app does not store original audio files on its own server.</td>
+              </tr>
+              <tr>
+                <td>Notifications and device state</td>
+                <td>Notification permission status, reminder/monitoring restoration after reboot, Wear OS or watchOS connection status</td>
+                <td>Reminders, wellness alerts, watch integration, duplicate alert prevention</td>
+              </tr>
+              <tr>
+                <td>Advertising data</td>
+                <td>Advertising identifiers, ad performance, and diagnostics processed by the Google AdMob SDK</td>
+                <td>Showing ads and measuring ad quality. Google's policies apply to AdMob processing.</td>
+              </tr>
+              <tr>
+                <td>AI coaching data</td>
+                <td>Scores, causes, record summaries, and questions sent after the user confirms the preview</td>
+                <td>Generating optional AI coaching responses</td>
+              </tr>
+              <tr>
+                <td>App and diagnostic data</td>
+                <td>App version, language setting, exported files, minimum diagnostic details needed for issue handling</td>
+                <td>App operation, support, feature improvement, data export</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. Health Data Access</h2>
+        <p>On Android, BodySignal reads health data through Health Connect. On Wear OS, it may use Health Services or the device Data Layer. On iOS, it reads health data through HealthKit. The app only reads health data that the user has allowed. The Android app provides Health Connect permission and permission usage explanation screens.</p>
+        <p>If background health access or watch monitoring is enabled, the app may process the necessary health data for alert evaluation and sync even when the user is not actively viewing the app. This works only when the user grants the required permissions and enables the related settings.</p>
+        <p>Users can revoke permissions at any time in Android Settings, Health Connect, Wear OS, the iOS Health app, or BodySignal settings.</p>
+      </section>
+
+      <section>
+        <h2>4. Storage and Transfers</h2>
+        <p>BodySignal is local-first by default. Health data caches, scores, records, and settings are stored on the user's device. Android backup and device-transfer rules are configured to exclude the app database, shared preferences, files, and external storage data from backup and transfer.</p>
+        <h3>Cases Where Data May Leave the Device</h3>
+        <ul>
+          <li>If the user configures AI coaching and confirms the preview, selected summary data is sent to the user's configured AI provider or the OpenAI API.</li>
+          <li>In release builds that use Google AdMob, the ad SDK may process data for ad delivery and measurement.</li>
+          <li>When the user shares a CSV, PDF, image report, or text, the selected share target app may receive that file or text.</li>
+          <li>When the user sends an email support request, the email content and address are handled by the email service provider.</li>
+          <li>When a phone and watch are paired, scores, settings, alert events, and quick record requests may be transferred between the user's own devices.</li>
+        </ul>
+        <p>BodySignal does not sell personal health data.</p>
+      </section>
+
+      <section>
+        <h2>5. Permissions</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Reason</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Health Connect / HealthKit / Health Services</td>
+                <td>Health data sync, score calculation, trend analysis, watch-based wellness alerts</td>
+              </tr>
+              <tr>
+                <td>ACTIVITY_RECOGNITION</td>
+                <td>Step and movement analysis, and reducing false alerts during movement or exercise</td>
+              </tr>
+              <tr>
+                <td>BODY_SENSORS and BODY_SENSORS_BACKGROUND</td>
+                <td>Heart-rate monitoring and background wellness alerts on Wear OS devices</td>
+              </tr>
+              <tr>
+                <td>RECORD_AUDIO</td>
+                <td>Voice input when selected by the user</td>
+              </tr>
+              <tr>
+                <td>POST_NOTIFICATIONS</td>
+                <td>Reminders, wellness alerts, and phone/watch notifications</td>
+              </tr>
+              <tr>
+                <td>RECEIVE_BOOT_COMPLETED</td>
+                <td>Restoring reminders and monitoring state after device restart</td>
+              </tr>
+              <tr>
+                <td>INTERNET</td>
+                <td>Showing ads, optional AI coaching requests, and opening external policy/support links</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>6. Retention and Deletion</h2>
+        <p>App data remains on the device until the user deletes it or uninstalls the app. The in-app reset feature deletes local records, health data caches, scores, settings, and other app data. Original data stored in Health Connect, HealthKit, or watch platforms must be managed in those platform settings.</p>
+        <p>Temporary files generated for export or sharing are designed to be cleaned up after sharing. Files delivered to a share target app may be retained according to that app's policy and the user's choices.</p>
+      </section>
+
+      <section>
+        <h2>7. Security</h2>
+        <p>The app uses operating-system permission controls, app sandboxing, secure storage, and encrypted transport where applicable. If the user selects an AI provider or external share target, that provider's security and privacy practices also apply.</p>
+      </section>
+
+      <section>
+        <h2>8. Children's Privacy</h2>
+        <p>BodySignal is not designed for children. If you believe that personal information of a child protected by applicable law has been entered into the app, please contact us using the details below.</p>
+      </section>
+
+      <section>
+        <h2>9. Third-Party Services</h2>
+        <ul>
+          <li>Google Health Connect, Health Services, Wear OS, HealthKit: health permissions and device integration</li>
+          <li>Google AdMob: ad delivery and ad measurement</li>
+          <li>OpenAI API or an AI provider configured by the user: optional AI coaching</li>
+          <li>Operating-system sharing and email apps: user-initiated sharing and support requests</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>10. Changes</h2>
+        <p>This Privacy Policy may be updated when app features, laws, or platform policies change. If there are material changes, we may notify users through the app or distribution page.</p>
+      </section>
+
+      <section>
+        <h2>11. Contact</h2>
+        <p>For privacy questions, data deletion requests, or app support, please contact us.</p>
+        <p>Developer: journey<br>Email: <a href="mailto:mintwin79@gmail.com">mintwin79@gmail.com</a></p>
+        <div class="notice">This document is a privacy policy draft based on the app's current functionality. Review it against your business details, applicable laws, target countries, and final ad/AI provider configuration before publishing.</div>
+      </section>
+    </article>
+
+    <footer>
+      <p>BodySignal Privacy Policy HTML. Use a public, active, non-PDF URL for app store submission.</p>
+    </footer>
+  </main>
+
+  <script>
+    const panels = {
+      ko: document.getElementById('policy-ko'),
+      en: document.getElementById('policy-en'),
+    };
+    const titles = {
+      ko: 'BodySignal 개인정보처리방침',
+      en: 'BodySignal Privacy Policy',
+    };
+    const updated = {
+      ko: '최종 업데이트: 2026년 8월 16일',
+      en: 'Last updated: August 16, 2026',
+    };
+    const buttons = Array.from(document.querySelectorAll('[data-lang-button]'));
+
+    function setLanguage(lang, updateHash = true) {
+      const next = panels[lang] ? lang : 'ko';
+      document.documentElement.lang = next;
+      document.querySelector('[data-i18n="title"]').textContent = titles[next];
+      document.querySelector('[data-i18n="updated"]').textContent = updated[next];
+      Object.entries(panels).forEach(([key, panel]) => {
+        panel.hidden = key !== next;
+      });
+      buttons.forEach((button) => {
+        button.setAttribute(
+          'aria-pressed',
+          String(button.dataset.langButton === next),
+        );
+      });
+      if (updateHash && window.location.hash !== `#${next}`) {
+        history.replaceState(null, '', `#${next}`);
+      }
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        setLanguage(button.dataset.langButton || 'ko');
+      });
+    });
+
+    window.addEventListener('hashchange', () => {
+      setLanguage(window.location.hash.replace('#', ''), false);
+    });
+
+    const hashLanguage = window.location.hash.replace('#', '');
+    const browserLanguage = (navigator.language || '').toLowerCase().startsWith('en')
+      ? 'en'
+      : 'ko';
+    const initial = hashLanguage || browserLanguage;
+    setLanguage(initial, false);
+  </script>
+</body>
+</html>
