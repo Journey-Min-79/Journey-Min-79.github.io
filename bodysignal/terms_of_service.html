@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BodySignal Terms of Service</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8f6;
+      --surface: #ffffff;
+      --text: #17201c;
+      --muted: #5c6862;
+      --line: #dbe2dd;
+      --accent: #127c6f;
+      --accent-soft: #e5f3ef;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101413;
+        --surface: #181f1d;
+        --text: #eef4f1;
+        --muted: #a9b8b1;
+        --line: #2b3632;
+        --accent: #6fd0bd;
+        --accent-soft: #18342f;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;
+      line-height: 1.65;
+    }
+    main { max-width: 920px; margin: 0 auto; padding: 32px 18px 56px; }
+    header, section {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+    }
+    header { margin-bottom: 18px; }
+    section { margin: 18px 0; }
+    h1 { margin: 0 0 8px; font-size: clamp(28px, 4vw, 42px); line-height: 1.15; }
+    h2 { margin: 28px 0 10px; font-size: 21px; line-height: 1.35; }
+    h2:first-child { margin-top: 0; }
+    p { margin: 0 0 12px; }
+    ul { margin: 8px 0 16px; padding-left: 22px; }
+    li { margin: 6px 0; }
+    a { color: var(--accent); font-weight: 700; }
+    .meta { color: var(--muted); margin: 0; }
+    .language-switch { display: flex; gap: 8px; margin-top: 20px; }
+    button {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 9px 14px;
+      background: var(--surface);
+      color: var(--text);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button[aria-pressed="true"] {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+    .lang-panel[hidden] { display: none; }
+    footer { color: var(--muted); font-size: 13px; padding: 12px 2px 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>BodySignal Terms of Service</h1>
+      <p class="meta">Effective date: August 16, 2026</p>
+      <p class="meta">Developer: journey · <a href="mailto:mintwin79@gmail.com">mintwin79@gmail.com</a></p>
+      <div class="language-switch" aria-label="Language">
+        <button type="button" data-lang="ko" aria-pressed="true">한국어</button>
+        <button type="button" data-lang="en" aria-pressed="false">English</button>
+      </div>
+    </header>
+
+    <div id="ko" class="lang-panel" lang="ko">
+      <section>
+        <h2>1. 약관의 적용</h2>
+        <p>본 약관은 journey(이하 "개발자")가 제공하는 바디시그널(BodySignal, 이하 "앱")의 이용에 적용됩니다. 앱을 이용하면 본 약관에 동의한 것으로 봅니다.</p>
+
+        <h2>2. 서비스 내용</h2>
+        <p>앱은 사용자의 기기 및 Health Connect 또는 HealthKit에서 허용된 건강·활동 데이터를 바탕으로 수면, 활동, 스트레스 및 회복 상태를 정리하고 웰니스 정보를 제공합니다.</p>
+
+        <h2>3. 의료 서비스가 아님</h2>
+        <p>앱의 점수, 분석, 알림 및 AI 조언은 일반적인 건강 관리 참고 정보이며 의학적 진단, 치료, 처방 또는 응급 서비스를 대신하지 않습니다. 건강 이상이나 응급 상황이 의심되면 의료 전문가 또는 지역 응급기관에 문의해야 합니다.</p>
+
+        <h2>4. 이용 연령</h2>
+        <p>앱은 만 18세 이상 사용자를 대상으로 합니다.</p>
+
+        <h2>5. 사용자 책임</h2>
+        <ul>
+          <li>사용자는 앱과 기기의 권한 및 데이터 연결 설정을 직접 관리합니다.</li>
+          <li>사용자는 앱의 정보를 단독으로 의학적 판단에 사용해서는 안 됩니다.</li>
+          <li>사용자는 앱을 불법적인 목적이나 서비스 운영을 방해하는 방식으로 이용해서는 안 됩니다.</li>
+        </ul>
+
+        <h2>6. AI 기능과 외부 서비스</h2>
+        <p>AI 코치는 선택 기능입니다. 사용자가 요청을 실행하면 화면에 표시된 질문과 건강 요약이 사용자가 선택한 AI 제공자에게 전송될 수 있습니다. AI 답변은 부정확하거나 불완전할 수 있으며 전문적인 의료 조언이 아닙니다.</p>
+
+        <h2>7. 광고 및 제3자 서비스</h2>
+        <p>앱은 Google AdMob, Firebase Analytics, Health Connect 등 제3자 서비스를 사용할 수 있습니다. 각 서비스의 이용에는 해당 제공자의 약관 및 개인정보 보호 기준이 적용될 수 있습니다.</p>
+
+        <h2>8. 지식재산권</h2>
+        <p>앱의 소프트웨어, 디자인, 상표, 문구 및 콘텐츠에 관한 권리는 개발자 또는 정당한 권리자에게 있습니다. 관련 법령에서 허용하는 경우를 제외하고 무단 복제, 수정, 배포 또는 역설계를 할 수 없습니다.</p>
+
+        <h2>9. 서비스 변경 및 중단</h2>
+        <p>개발자는 앱의 안정성, 보안, 정책 준수 또는 운영상 필요에 따라 기능을 변경하거나 일시적으로 중단할 수 있습니다. 중요한 변경은 앱 또는 공개된 문서를 통해 안내합니다.</p>
+
+        <h2>10. 책임의 제한</h2>
+        <p>관련 법령이 허용하는 범위에서 개발자는 기기, 센서, 플랫폼 또는 제3자 서비스에서 제공되는 데이터의 정확성이나 연속성을 보장하지 않습니다. 개발자의 고의 또는 중대한 과실이 없는 한 사용자의 판단이나 외부 서비스 장애로 인한 손해에 대해 책임을 지지 않습니다.</p>
+
+        <h2>11. 개인정보 보호</h2>
+        <p>개인정보 및 데이터 처리에 관한 사항은 <a href="privacy_policy.html">개인정보처리방침</a>을 따릅니다.</p>
+
+        <h2>12. 준거법 및 문의</h2>
+        <p>본 약관은 대한민국 법령을 따릅니다. 약관 또는 앱 이용에 관한 문의는 <a href="mailto:mintwin79@gmail.com">mintwin79@gmail.com</a>으로 연락해 주세요.</p>
+      </section>
+    </div>
+
+    <div id="en" class="lang-panel" lang="en" hidden>
+      <section>
+        <h2>1. Acceptance</h2>
+        <p>These Terms govern your use of BodySignal (the "App"), provided by journey (the "Developer"). By using the App, you agree to these Terms.</p>
+
+        <h2>2. Service</h2>
+        <p>The App organizes sleep, activity, stress, and recovery information using data that you permit it to access from your device and Health Connect or HealthKit.</p>
+
+        <h2>3. Not Medical Care</h2>
+        <p>Scores, analysis, alerts, and AI guidance are general wellness information. They do not replace medical diagnosis, treatment, prescriptions, or emergency services. Contact a qualified healthcare professional or local emergency service when appropriate.</p>
+
+        <h2>4. Age</h2>
+        <p>The App is intended for users who are at least 18 years old.</p>
+
+        <h2>5. User Responsibilities</h2>
+        <ul>
+          <li>You control the App's permissions and connected data sources.</li>
+          <li>You must not rely on the App as the sole basis for a medical decision.</li>
+          <li>You must not use the App unlawfully or interfere with its operation.</li>
+        </ul>
+
+        <h2>6. AI and External Services</h2>
+        <p>The AI coach is optional. When you submit a request, the displayed question and health summary may be sent to the AI provider you selected. AI responses may be inaccurate or incomplete and are not professional medical advice.</p>
+
+        <h2>7. Ads and Third-Party Services</h2>
+        <p>The App may use third-party services such as Google AdMob, Firebase Analytics, and Health Connect. Their terms and privacy practices may apply to their processing.</p>
+
+        <h2>8. Intellectual Property</h2>
+        <p>The App's software, design, marks, text, and content belong to the Developer or their respective owners. You may not copy, modify, distribute, or reverse engineer them except where applicable law permits.</p>
+
+        <h2>9. Changes and Availability</h2>
+        <p>The Developer may modify or temporarily suspend features for stability, security, policy compliance, or operational reasons. Material changes will be announced through the App or published documents.</p>
+
+        <h2>10. Limitation of Liability</h2>
+        <p>To the extent permitted by law, the Developer does not guarantee the accuracy or continuous availability of data supplied by devices, sensors, platforms, or third-party services. The Developer is not liable for loss caused by user decisions or third-party failures unless caused by intentional misconduct or gross negligence.</p>
+
+        <h2>11. Privacy</h2>
+        <p>See the <a href="privacy_policy.html">Privacy Policy</a> for information about data handling.</p>
+
+        <h2>12. Governing Law and Contact</h2>
+        <p>These Terms are governed by the laws of the Republic of Korea. Contact <a href="mailto:mintwin79@gmail.com">mintwin79@gmail.com</a> with questions about these Terms or the App.</p>
+      </section>
+    </div>
+
+    <footer>BodySignal · journey</footer>
+  </main>
+  <script>
+    const buttons = document.querySelectorAll('[data-lang]');
+    const panels = document.querySelectorAll('.lang-panel');
+
+    function selectLanguage(language) {
+      panels.forEach((panel) => { panel.hidden = panel.id !== language; });
+      buttons.forEach((button) => {
+        button.setAttribute('aria-pressed', String(button.dataset.lang === language));
+      });
+      document.documentElement.lang = language;
+      localStorage.setItem('bodysignal-terms-language', language);
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => selectLanguage(button.dataset.lang));
+    });
+
+    const saved = localStorage.getItem('bodysignal-terms-language');
+    const preferred = navigator.language.toLowerCase().startsWith('ko') ? 'ko' : 'en';
+    selectLanguage(saved === 'ko' || saved === 'en' ? saved : preferred);
+  </script>
+</body>
+</html>
