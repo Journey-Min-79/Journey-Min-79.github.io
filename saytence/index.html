@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saytence (세이턴스) | 듣고 말하는 온디바이스 문장 학습 - 79's Labs</title>
+<meta name="description" content="카드를 읽고, 원어민 음성을 듣고, 직접 말하며 체득하는 온디바이스 문장 학습 앱 Saytence입니다. 영어 회화 1,200문장, JLPT N5~N3 4,300단어/2,600문장 및 12개 언어 학습을 지원합니다. 1인 개발자 Journey Min 제작.">
+<meta name="keywords" content="Journey Min, journey min, journeymin, 저니민, Saytence, 세이턴스, 문장 학습, 영어 회화, 일본어 공부, JLPT, 발음 연습, 섀도잉, 외국어 공부 앱, 79's Labs, 친구들랩스">
+<meta name="author" content="Journey Min">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#07111f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7fbff" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../favicon.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png" sizes="180x180">
+<link rel="canonical" href="https://journey-min-79.github.io/saytence/">
+
+<!-- Open Graph / SNS -->
+<meta property="og:title" content="Saytence | 듣고 말하는 온디바이스 문장 학습 - Journey Min">
+<meta property="og:description" content="읽기 → 듣기 → 발음 녹음의 자연스러운 흐름으로 문장을 내 것으로 만드세요. 1인 개발자 Journey Min 제작.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://journey-min-79.github.io/saytence/">
+<meta property="og:site_name" content="79's Labs">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Saytence | 듣고 말하는 문장 학습 (Journey Min)">
+<meta name="twitter:description" content="12개 언어 확장, 원어민 음성 비교 및 오프라인 문장 학습 모바일 앱 - 개발자 Journey Min">
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://journey-min-79.github.io/saytence/#app",
+      "name": "Saytence",
+      "alternateName": "세이턴스",
+      "description": "듣고 말하며 체득하는 온디바이스 다국어 문장 학습 모바일 애플리케이션",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Android",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.journeymin.saytence",
+      "author": {
+        "@type": "Person",
+        "name": "Journey Min",
+        "alternateName": ["journey min", "journeymin", "저니민"],
+        "url": "https://journey-min-79.github.io/#maker"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW",
+        "url": "https://play.google.com/store/apps/details?id=com.journeymin.saytence"
+      },
+      "featureList": [
+        "읽기 → 듣기 → 뜻과 해설 확인의 3단계 학습 사이클",
+        "자가 진단 기반 취약 문장 스마트 복습",
+        "내 목소리 녹음 및 원어민 발음 비교",
+        "음성 인식 기반 발음 피드백 및 배속 조절",
+        "영어 회화 12개 코스(1,200문장), JLPT N5~N3 단어 4,300여 개 및 문장 2,600개",
+        "사용자 맞춤형 JSON 단어장 가져오기 및 내보내기",
+        "12개 언어 확장 및 오프라인 완전 지원"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "79's Labs",
+          "item": "https://journey-min-79.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "제품 목록",
+          "item": "https://journey-min-79.github.io/#apps"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Saytence",
+          "item": "https://journey-min-79.github.io/saytence/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
+<nav class="site-nav" aria-label="주요 메뉴">
+  <div class="wrap nav-inner">
+    <a class="nav-brand" href="../index.html" aria-label="79's Labs 홈">
+      <span class="nav-symbol" aria-hidden="true">79</span>
+      <span>79's Labs</span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html#apps">제품 전체</a>
+      <a href="../wakemedi/index.html">WakeMedi</a>
+      <a href="../saytence/index.html" class="active">Saytence</a>
+      <a href="../bodysignal/index.html">BodySignal</a>
+      <a href="../index.html#maker">만드는 사람</a>
+      <a href="../index.html#contact">문의</a>
+    </div>
+    <div class="nav-actions">
+      <a class="nav-store" href="https://play.google.com/store/apps/details?id=com.journeymin.saytence" target="_blank" rel="noopener" aria-label="Saytence 구글 플레이에서 다운로드">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <span>Google Play</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+  <div class="wrap">
+    <ul class="breadcrumbs" aria-label="현재 위치">
+      <li><a href="../index.html">홈</a></li>
+      <li><a href="../index.html#apps">제품 라인업</a></li>
+      <li aria-current="page">Saytence</li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="detail-hero">
+    <div class="wrap detail-hero-grid">
+      <div class="detail-hero-copy">
+        <div class="app-brand-badge">
+          <img src="../assets/saytence-icon.png" alt="Saytence 아이콘" width="76" height="76">
+          <div>
+            <h1>Saytence</h1>
+            <p class="app-category">듣고 말하는 온디바이스 문장 학습</p>
+          </div>
+        </div>
+
+        <p class="detail-lead">
+          눈으로만 보는 외국어는 입에서 나오지 않습니다. <strong>Saytence(세이턴스)</strong>는 문장을 소리 내어 읽고, 원어민 발음과 내 목소리를 비교하며 감각으로 언어를 체득하는 도구입니다.
+        </p>
+
+        <div class="detail-actions">
+          <a class="button primary" href="https://play.google.com/store/apps/details?id=com.journeymin.saytence" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Google Play에서 다운로드
+          </a>
+          <span class="badge live">국내(한국) 출시됨 · 글로벌 출시 예정</span>
+        </div>
+
+        <div class="app-meta">
+          <span style="color: var(--brand-blue); border-color: rgba(39, 143, 214, 0.4); font-weight: 750;">한국 출시 (글로벌 순차 런칭 예정)</span>
+          <span style="color: var(--brand-green); border-color: rgba(140, 197, 47, 0.4);">100% 무료 (Free)</span>
+          <span>영어·일본어 코스 내장</span>
+          <span>12개 외국어 음성(TTS/STT) 지원</span>
+          <span>내 단어장(JSON) 가져오기</span>
+        </div>
+      </div>
+
+      <div class="showcase-stage">
+        <div class="phone-mockup">
+          <img src="../assets/saytence-mockup.png" alt="Saytence 문장 학습 카드 화면" width="1080" height="1920">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features Deep Dive -->
+  <section id="features" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Core features</p>
+          <h2>몰입감 높은 학습 경험</h2>
+        </div>
+        <p class="sub">문법 규칙을 외우는 고통 대신, 입과 귀가 먼저 반응하는 자연스러운 훈련 방식을 제공합니다.</p>
+      </div>
+
+      <div class="detail-features-grid">
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          </div>
+          <h3>3단계 발화 루프 & STT 음성 피드백</h3>
+          <p>[원어민 TTS 듣기] ➔ [내 목소리 녹음 및 파형 비교] ➔ [음성인식(STT) 실시간 일치도 판별]의 매끄러운 템포로 입과 귀가 기억하게 훈련합니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
+          </div>
+          <h3>SRS 간격 반복 복습 알고리즘</h3>
+          <p>망각곡선 이론을 적용한 Review Scheduler가 사용자의 학습 반응("알아요 / 헷갈려요 / 다시 볼래요")을 분석해 최적의 복습 주기를 자동 계산합니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <h3>검증된 내장 코스 (영어 & 일본어)</h3>
+          <p>일상·비즈니스 영어 회화 1,200문장(C01~C12 단계별 코스)과 일본어 JLPT N5, N4, N3 핵심 단어 4,300여 개 및 문장 2,600개가 기본 탑재되어 있습니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <h3>나만의 단어장(JSON) 무제한 가져오기</h3>
+          <p>좋아하는 미드 대사, 유튜브 자막, 전공 서적 문장을 JSON 파일로 손쉽게 변환해 앱으로 불러오면 즉시 나만의 플래시카드가 완성됩니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>12개 외국어 음성(TTS/STT) 엔진</h3>
+          <p>영어, 일본어 기본 코스는 물론 중국어(간체/번체), 스페인어, 프랑스어, 독일어 등 12개 외국어의 TTS 발음 듣기 및 STT 음성인식 엔진을 지원합니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>온디바이스 & 데이터 무제한 백업</h3>
+          <p>모든 데이터가 기기 로컬 SQLite DB에 안전하게 보관되며, 언제든지 JSON 전체 백업 및 복원이 가능해 기기를 교체해도 안전합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specs -->
+  <section id="specs" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Specifications</p>
+          <h2>앱 사양 및 정보</h2>
+        </div>
+      </div>
+
+      <div class="spec-table-shell">
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <th scope="row">앱 이름</th>
+              <td>Saytence (세이턴스 - 듣고 말하는 온디바이스 문장 학습)</td>
+            </tr>
+            <tr>
+              <th scope="row">출시 지역</th>
+              <td><strong>국내(한국) 출시 완료 · 글로벌 순차 런칭 예정</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">가격</th>
+              <td><strong style="color: var(--brand-green); font-size: 1.05rem;">100% 무료 (Free)</strong> · 인앱결제나 유료 구독 없이 모든 내장 코스 및 JSON 가져오기 완전 무료</td>
+            </tr>
+            <tr>
+              <th scope="row">개발사</th>
+              <td>79's Labs (친구들랩스)</td>
+            </tr>
+            <tr>
+              <th scope="row">지원 플랫폼</th>
+              <td>Android 8.0 (Oreo) 이상</td>
+            </tr>
+            <tr>
+              <th scope="row">학습 핵심 기술</th>
+              <td>온디바이스 TTS 음성 합성, STT 음성인식 일치도 분석, SRS 망각곡선 간격 복습 스케줄러</td>
+            </tr>
+            <tr>
+              <th scope="row">기본 수록 코스</th>
+              <td>영어 회화 1,200문장 (C01~C12 코스), 일본어 JLPT N5~N3 단어 4,300여 개 & 문장 2,600개</td>
+            </tr>
+            <tr>
+              <th scope="row">학습 음성 지원 언어</th>
+              <td>영어, 일본어, 중국어(간체/번체), 한국어, 스페인어, 프랑스어, 독일어, 이탈리아어, 포르투갈어, 아랍어, 태국어 등 12개 외국어</td>
+            </tr>
+            <tr>
+              <th scope="row">앱 인터페이스 언어</th>
+              <td>한국어 (국내 출시 완료 · 향후 글로벌 다국어 UI 순차 적용 예정)</td>
+            </tr>
+            <tr>
+              <th scope="row">커스텀 콘텐츠 확장</th>
+              <td>사용자 정의 JSON 단어장/미드 대사 무제한 가져오기 (문법 검증 및 언어 자동 판별 지원)</td>
+            </tr>
+            <tr>
+              <th scope="row">데이터 보관 방식</th>
+              <td>100% On-Device 로컬 암호화 저장 (SQLite) 및 JSON 백업/복원 지원</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">FAQ</p>
+          <h2>자주 묻는 질문</h2>
+        </div>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>정말 모든 기능이 무료인가요?</h4>
+          <p>네, Saytence의 모든 내장 코스, 음성인식(STT) 발음 피드백, 나만의 JSON 단어장 무제한 가져오기 및 백업 기능까지 일체의 유료 결제 없이 100% 무료로 제공됩니다.</p>
+        </div>
+        <div class="faq-item">
+          <h4>인터넷 연결이 없어도 학습할 수 있나요?</h4>
+          <p>네, 모든 내장 코스와 가져온 JSON 문장 데이터, TTS 음성 엔진이 기기 로컬에서 처리되므로 비행기 모드나 오프라인 상태에서도 100% 정상 작동합니다.</p>
+        </div>
+        <div class="faq-item">
+          <h4>JSON 파일에 일부 오타나 오류가 있으면 어떻게 되나요?</h4>
+          <p>Saytence의 스마트 파서가 문법을 사전에 검증하여, 오류가 있는 카드가 있더라도 정상적인 카드들만 골라내어 안전하게 가져올 수 있습니다.</p>
+        </div>
+        <div class="faq-item">
+          <h4>녹음된 내 음성은 어디에 저장되나요?</h4>
+          <p>사용자의 스마트폰 로컬 저장소에만 보관되며, 어떤 서버로도 전송되지 않으므로 개인 프라이버시가 완벽히 보호됩니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dedicated JSON Creation & Drama Script Import Guide -->
+  <section id="json-guide" class="guide-section" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <!-- Section Header -->
+      <div class="section-head" style="margin-bottom: 32px;">
+        <span class="prompt-badge">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg>
+          Custom Content Guide
+        </span>
+        <h2 style="margin-top: 10px;">나만의 미드 대사 &amp; 단어장 JSON 만드는 법</h2>
+        <p class="sub">ChatGPT나 Claude로 미드 자막, 영화 명대사, 나만의 단어장을 Saytence용 카드로 3초 만에 변환해보세요.</p>
+      </div>
+
+      <!-- Step-by-Step Flow (Always Visible) -->
+      <div class="steps-grid" style="margin-bottom: 28px;">
+        <div class="step-card">
+          <span class="step-num">1</span>
+          <h4>AI 프롬프트 복사</h4>
+          <p>아래 제공된 <strong>Saytence 전용 생성 프롬프트</strong>를 원클릭으로 복사합니다.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">2</span>
+          <h4>AI에게 대사 전달</h4>
+          <p>ChatGPT, Claude, Gemini 등에 프롬프트와 함께 공부하고 싶은 <strong>스크립트나 단어 목록</strong>을 붙여넣습니다.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">3</span>
+          <h4>JSON 파일로 저장</h4>
+          <p>AI가 생성한 JSON 코드를 메모장에 붙여넣고 <code>.json</code> 확장자로 저장하거나 텍스트를 복사합니다.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">4</span>
+          <h4>앱에서 가져오기 완료</h4>
+          <p>Saytence 앱 <strong>[설정] ➔ [JSON 가져오기]</strong>에서 파일을 선택하면 즉시 학습 카드가 생성됩니다.</p>
+        </div>
+      </div>
+
+      <!-- Detailed AI Prompt & JSON Examples (Collapsible Accordion) -->
+      <details class="guide-accordion" id="json-guide-details">
+        <summary class="guide-summary">
+          <div class="summary-left">
+            <h3 style="margin: 0 0 4px; font-size: 1.15rem; font-weight: 800;">AI 변환 프롬프트 및 JSON 예시 코드 보기</h3>
+            <p class="sub-text">원클릭 복사 가능한 AI 프롬프트와 실제 JSON 코드 예시, 필드 명세서를 확인할 수 있습니다.</p>
+          </div>
+          <div class="summary-toggle-btn">
+            <span id="accordion-toggle-text">상세 가이드 펼치기</span>
+            <svg class="toggle-arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+        </summary>
+
+        <div class="accordion-content">
+          <!-- Prompt Box -->
+          <div class="prompt-box">
+            <div class="prompt-box-header">
+              <span class="prompt-badge">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/></svg>
+                Saytence 공식 AI 변환 프롬프트 (ChatGPT / Claude / Gemini용)
+              </span>
+              <button class="copy-btn" id="copy-prompt-btn" aria-label="AI 프롬프트 복사">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span class="copy-btn-label">프롬프트 복사</span>
+              </button>
+            </div>
+            <pre class="prompt-text" id="ai-prompt-content">아래 스크립트를 Saytence 앱에 업로드할 수 있는 JSON으로 만들어줘.
+
+조건:
+- 결과는 JSON만 출력해줘. 설명, 마크다운, 코드블록은 쓰지 마.
+- format은 "saytence-pack"
+- schemaVersion은 1
+- sourceLanguage는 원문 언어에 맞게 넣어줘. 예: 일본어 "ja-JP", 영어 "en-US"
+- targetLanguage는 "ko-KR"
+- 각 대사는 items 배열에 넣어줘.
+- 각 item에는 id, type, text, meaning, pronunciation, description, tags, difficulty를 넣어줘.
+- type은 문장이면 "sentence", 단어면 "word"로 해줘.
+- text는 원문 그대로 넣어줘.
+- meaning은 자연스러운 한국어 해석으로 만들어줘.
+- pronunciation은 한국어 사용자가 읽을 수 있게 한글식 발음으로 적어줘. 일본어는 가능하면 히라가나 읽기도 description에 포함해줘.
+- description에는 문법, 뉘앙스, 장면 설명을 짧고 보기 쉽게 적어줘.
+- 너무 긴 대사는 공부하기 좋게 짧은 문장 단위로 나눠줘.
+- 불필요한 지문, 효과음, 장면 설명은 제외해줘.
+- id는 중복되지 않게 "line-001" 형식으로 만들어줘.
+
+[여기에 스크립트 또는 단어 목록을 붙여넣으세요]</pre>
+          </div>
+
+          <!-- JSON Code Examples -->
+          <div style="margin-top: 40px;">
+            <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 14px;">실제 JSON 작성 예시</h3>
+            <p style="color: var(--text-2); font-size: 0.95rem; margin-bottom: 20px;">
+              필요에 따라 상세 정보가 담긴 <strong>풀 패키지 형식</strong>이나 핵심만 적은 <strong>초간단 형식</strong> 모두 지원합니다.
+            </p>
+
+            <!-- Example 1: Full Drama Pack -->
+            <div class="code-shell">
+              <div class="code-header">
+                <span>미드 프렌즈(Friends) 대사 학습 패키지 예시 (권장 형식)</span>
+                <span class="lang-tag">JSON</span>
+              </div>
+              <pre><code>{
+  "format": "saytence-pack",
+  "schemaVersion": 1,
+  "id": "friends-s01e01",
+  "title": "Friends S01E01 - 모니카의 저녁식사",
+  "description": "미드 프렌즈 시즌1 1화 주요 회화 표현 모음",
+  "sourceLanguage": "en-US",
+  "targetLanguage": "ko-KR",
+  "version": 1,
+  "author": "Saytence Learner",
+  "items": [
+    {
+      "id": "friends-001",
+      "type": "sentence",
+      "text": "There's nothing to tell.",
+      "meaning": "말할 게 아무것도 없어.",
+      "pronunciation": "데얼즈 너씽 투 텔",
+      "description": "상대가 캐묻는 상황에서 별일 아니라고 대화를 넘길 때 쓰는 자연스러운 일상 표현.",
+      "expressions": [
+        {
+          "text": "nothing to tell",
+          "meaning": "말할 것이 없음",
+          "description": "길게 설명하고 싶지 않을 때 씁니다."
+        }
+      ],
+      "tags": ["drama", "daily", "friends"],
+      "difficulty": 1
+    },
+    {
+      "id": "friends-002",
+      "type": "word",
+      "text": "awkward",
+      "meaning": "어색한, 곤란한",
+      "pronunciation": "오크워드",
+      "description": "분위기나 상황이 뻘쭘하고 불편할 때 자주 쓰이는 핵심 형용사.",
+      "examples": [
+        {
+          "text": "That was really awkward.",
+          "meaning": "그 상황 진짜 어색했어."
+        }
+      ],
+      "tags": ["emotion", "slang"],
+      "difficulty": 2
+    }
+  ]
+}</code></pre>
+            </div>
+
+            <!-- Example 2: Minimal Sentences -->
+            <div class="code-shell">
+              <div class="code-header">
+                <span>영화 명대사 초간단 형식 (2개 필드만으로 즉시 생성)</span>
+                <span class="lang-tag">JSON</span>
+              </div>
+              <pre><code>{
+  "title": "영화 속 명대사",
+  "sourceLanguage": "en-US",
+  "items": [
+    {
+      "text": "May the Force be with you.",
+      "meaning": "포스가 함께하길."
+    },
+    {
+      "text": "I'll be back.",
+      "meaning": "다시 돌아올게."
+    },
+    {
+      "text": "Here's looking at you, kid.",
+      "meaning": "당신의 눈동자에 건배를."
+    }
+  ]
+}</code></pre>
+            </div>
+          </div>
+
+          <!-- JSON Schema Table -->
+          <div style="margin-top: 40px;">
+            <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 16px;">JSON 규격 및 필드 상세 가이드</h3>
+            <div class="spec-table-shell">
+              <table class="spec-table">
+                <thead>
+                  <tr>
+                    <th style="width: 22%;">필드명</th>
+                    <th style="width: 15%;">타입 / 필수</th>
+                    <th>설명 및 작성 가이드</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>format</code></td>
+                    <td>String (권장)</td>
+                    <td>패키지 포맷 식별자. <code>"saytence-pack"</code>으로 기재합니다.</td>
+                  </tr>
+                  <tr>
+                    <td><code>title</code></td>
+                    <td>String (필수)</td>
+                    <td>앱 내 카드 묶음 목록에 표시될 제목입니다. (예: <code>"라라랜드 OST 주요 문장"</code>)</td>
+                  </tr>
+                  <tr>
+                    <td><code>sourceLanguage</code></td>
+                    <td>String (권장)</td>
+                    <td>원문 언어 코드입니다. 영어: <code>"en-US"</code>, 일본어: <code>"ja-JP"</code>, 중국어: <code>"zh-CN"</code> 등. (생략 시 앱이 자동 감지)</td>
+                  </tr>
+                  <tr>
+                    <td><code>items[].type</code></td>
+                    <td>String (선택)</td>
+                    <td><code>"sentence"</code>(문장, 기본값) 또는 <code>"word"</code>(단어)로 구분합니다.</td>
+                  </tr>
+                  <tr>
+                    <td><code>items[].text</code></td>
+                    <td>String (필수)</td>
+                    <td>학습할 원문 텍스트입니다. TTS 음성 출력 및 발음 비교 대상이 됩니다.</td>
+                  </tr>
+                  <tr>
+                    <td><code>items[].meaning</code></td>
+                    <td>String (필수)</td>
+                    <td>한국어 뜻과 자연스러운 번역 문장입니다.</td>
+                  </tr>
+                  <tr>
+                    <td><code>items[].pronunciation</code></td>
+                    <td>String (선택)</td>
+                    <td>한국어 사용자가 읽기 쉽도록 표기한 발음 안내입니다. (예: <code>"모우 이치도"</code>)</td>
+                  </tr>
+                  <tr>
+                    <td><code>items[].description</code></td>
+                    <td>String (선택)</td>
+                    <td>문법 포인트, 대사의 뉘앙스, 사용 상황 또는 히라가나 읽기 팁을 적어둡니다.</td>
+                  </tr>
+                  <tr>
+                    <td><code>items[].tags</code></td>
+                    <td>Array (선택)</td>
+                    <td>카드를 분류할 태그 배열입니다. (예: <code>["미드", "필수회화", "초급"]</code>)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="wrap">
+    <div class="contact-card">
+      <h2>오늘부터 하루 10분, 소리 내어 말해보세요</h2>
+      <p class="sub">Saytence와 함께 당신의 외국어 감각을 깨워보세요.</p>
+      <a class="button primary" href="https://play.google.com/store/apps/details?id=com.journeymin.saytence" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Google Play에서 무료로 받기
+      </a>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite">AI 프롬프트가 클립보드에 복사되었습니다!</div>
+
+<script>
+  // Copy Prompt Clipboard Handler
+  document.getElementById('copy-prompt-btn')?.addEventListener('click', async () => {
+    const text = document.getElementById('ai-prompt-content')?.innerText;
+    if (text) {
+      try {
+        await navigator.clipboard.writeText(text);
+        const toast = document.getElementById('toast');
+        if (toast) {
+          toast.classList.add('show');
+          setTimeout(() => toast.classList.remove('show'), 2600);
+        }
+      } catch (e) {
+        console.error('Failed to copy', e);
+      }
+    }
+  });
+
+  // Accordion Toggle Text Sync
+  const details = document.getElementById('json-guide-details');
+  const toggleText = document.getElementById('accordion-toggle-text');
+  if (details && toggleText) {
+    details.addEventListener('toggle', () => {
+      toggleText.textContent = details.open ? '상세 가이드 접기' : '상세 가이드 펼치기';
+    });
+  }
+</script>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-nav">
+      <a href="../index.html">스튜디오 홈</a>
+      <a href="../wakemedi/index.html">WakeMedi</a>
+      <a href="../saytence/index.html">Saytence</a>
+      <a href="../bodysignal/index.html">BodySignal</a>
+      <a href="../index.html#maker">만드는 사람</a>
+      <a href="mailto:mintwin79@gmail.com">문의하기</a>
+    </div>
+    <p class="copyright">© 2026 79's Labs (친구들랩스). All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

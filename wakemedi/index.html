@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WakeMedi (웨이크메디) | 전화처럼 울리는 스마트 기상·복약 알람 - 79's Labs</title>
+<meta name="description" content="전화 수신 화면처럼 울려 확실하게 잠을 깨우는 모닝콜과 하루 여러 번의 복약 일정을 관리하는 온디바이스 헬스케어 알람 앱 WakeMedi입니다. 1인 개발자 Journey Min 제작.">
+<meta name="keywords" content="Journey Min, journey min, journeymin, 저니민, WakeMedi, 웨이크메디, 기상 알람, 복약 알람, 모닝콜 앱, 약 복용 알림, 전화 알람, 79's Labs, 친구들랩스">
+<meta name="author" content="Journey Min">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#07111f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7fbff" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../favicon.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png" sizes="180x180">
+<link rel="canonical" href="https://journey-min-79.github.io/wakemedi/">
+
+<!-- Open Graph / SNS -->
+<meta property="og:title" content="WakeMedi | 전화처럼 울리는 스마트 기상·복약 알람 - Journey Min">
+<meta property="og:description" content="전화 수신 화면 알람으로 수면 관성을 깨우고, 복약 체크와 통계를 한곳에서 관리하세요. 1인 개발자 Journey Min 제작.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://journey-min-79.github.io/wakemedi/">
+<meta property="og:site_name" content="79's Labs">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="WakeMedi | 스마트 기상·복약 알람 (Journey Min)">
+<meta name="twitter:description" content="전화 수신 형태 알람과 주간 복약 관리 모바일 앱 - 개발자 Journey Min">
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://journey-min-79.github.io/wakemedi/#app",
+      "name": "WakeMedi",
+      "alternateName": "웨이크메디",
+      "description": "전화처럼 울리는 기상 알람과 복약 일정 및 기록을 관리하는 모바일 애플리케이션",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Android",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.journeymin.wakemedi",
+      "author": {
+        "@type": "Person",
+        "name": "Journey Min",
+        "alternateName": ["journey min", "journeymin", "저니민"],
+        "url": "https://journey-min-79.github.io/#maker"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW",
+        "url": "https://play.google.com/store/apps/details?id=com.journeymin.wakemedi"
+      },
+      "featureList": [
+        "전화 수신 형태의 풀스크린 모닝콜 알람",
+        "식전/식후 시간별 복약 등록 및 알림",
+        "일일 복약 체크 및 주간 복약률 통계",
+        "QR 코드 및 링크를 통한 알람 설정 공유",
+        "내 목소리로 녹음하는 커스텀 모닝콜 보이스",
+        "서버 전송 없는 기기 내 온디바이스 데이터 보관"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "79's Labs",
+          "item": "https://journey-min-79.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "제품 목록",
+          "item": "https://journey-min-79.github.io/#apps"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "WakeMedi",
+          "item": "https://journey-min-79.github.io/wakemedi/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
+<nav class="site-nav" aria-label="주요 메뉴">
+  <div class="wrap nav-inner">
+    <a class="nav-brand" href="../index.html" aria-label="79's Labs 홈">
+      <span class="nav-symbol" aria-hidden="true">79</span>
+      <span>79's Labs</span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html#apps">제품 전체</a>
+      <a href="../wakemedi/index.html" class="active">WakeMedi</a>
+      <a href="../saytence/index.html">Saytence</a>
+      <a href="../bodysignal/index.html">BodySignal</a>
+      <a href="../index.html#maker">만드는 사람</a>
+      <a href="../index.html#contact">문의</a>
+    </div>
+    <div class="nav-actions">
+      <a class="nav-store" href="https://play.google.com/store/apps/details?id=com.journeymin.wakemedi" target="_blank" rel="noopener" aria-label="WakeMedi 구글 플레이에서 다운로드">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <span>Google Play</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+  <div class="wrap">
+    <ul class="breadcrumbs" aria-label="현재 위치">
+      <li><a href="../index.html">홈</a></li>
+      <li><a href="../index.html#apps">제품 라인업</a></li>
+      <li aria-current="page">WakeMedi</li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="detail-hero">
+    <div class="wrap detail-hero-grid">
+      <div class="detail-hero-copy">
+        <div class="app-brand-badge">
+          <img src="../assets/wakemedi-icon.png" alt="WakeMedi 아이콘" width="76" height="76">
+          <div>
+            <h1>WakeMedi</h1>
+            <p class="app-category">스마트 기상 & 복약 루틴 관리</p>
+          </div>
+        </div>
+
+        <p class="detail-lead">
+          반복되는 일반 알람은 무의식중에 끄기 쉽습니다. <strong>WakeMedi</strong>는 실제 전화가 걸려온 듯한 전체 화면 인터페이스와 직관적인 복약 기록으로 아침 기상과 건강 루틴을 확실하게 지켜줍니다.
+        </p>
+
+        <div class="detail-actions">
+          <a class="button primary" href="https://play.google.com/store/apps/details?id=com.journeymin.wakemedi" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Google Play에서 다운로드
+          </a>
+          <span class="badge live">글로벌 출시 (Global Live)</span>
+        </div>
+
+        <div class="app-meta">
+          <span style="color: var(--brand-blue); border-color: rgba(39, 143, 214, 0.4); font-weight: 750;">글로벌 서비스 중</span>
+          <span style="color: var(--brand-green); border-color: rgba(140, 197, 47, 0.4);">100% 무료 (Free)</span>
+          <span>Android 8.0+ 지원</span>
+          <span>100% On-Device 저장</span>
+          <span>광고 없는 깔끔한 경험</span>
+        </div>
+      </div>
+
+      <div class="showcase-stage">
+        <div class="phone-mockup">
+          <img src="../assets/wakemedi-mockup.png" alt="WakeMedi 오늘의 복약 체크 및 주간 통계 화면" width="1080" height="1920">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features Deep Dive -->
+  <section id="features" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Core features</p>
+          <h2>꼭 필요한 기능에 집중한<br>세심한 설계</h2>
+        </div>
+        <p class="sub">복잡한 기능 대신, 매일 아침 눈을 뜨고 정해진 시간에 약을 챙겨 먹는 기본에 가장 충실합니다.</p>
+      </div>
+
+      <div class="detail-features-grid">
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h3>전화 수신형 풀스크린 모닝콜</h3>
+          <p>단순히 밀어서 끄는 알람 대신, 실제 전화가 온 듯한 전체 화면 인터페이스와 발신자 프로필, 통화 수신 제스처로 잠결의 무의식적 알람 해제를 방지합니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          </div>
+          <h3>내 목소리 & 가족 보이스 알람</h3>
+          <p>날카로운 전자 벨소리 대신, 본인이 직접 녹음한 다짐이나 소중한 가족·연인의 목소리를 전화 벨소리처럼 재생하여 편안하고 기분 좋게 기상합니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>정밀 복약 스케줄러 & 순응도 통계</h3>
+          <p>식전/식후, 시간대별 복용 스케줄을 세분화하여 등록하고, 원터치 복약 체크 및 주간 복약 달성률(Adherence Rate) 통계로 건강 습관을 관리합니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 7h3v3H7zM14 7h3v3h-3zM7 14h3v3H7zM14 14h3v3h-3z"/></svg>
+          </div>
+          <h3>QR & 딥링크 원클릭 알람 공유</h3>
+          <p>반복 요일, 복약 일정, 커스텀 보이스 설정이 포함된 알람을 QR 코드나 전용 딥링크 URL로 만들어 부모님, 자녀, 룸메이트에게 간편하게 전송할 수 있습니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <h3>100% 정시 알람 신뢰성 엔진</h3>
+          <p>안드로이드 Doze 모드 및 절전 정책 환경에서도 알람이 지연되거나 누락되지 않도록 Exact Alarm 및 배터리 최적화 자가진단 파이프라인을 갖췄습니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>서버 없는 로컬 SQLite 저장소</h3>
+          <p>기상 기록과 복약 내역 등 민감한 개인 건강 데이터는 오직 기기 내부(SQLite)에만 저장되며, 회원가입 없이 즉시 가볍고 쾌적하게 구동됩니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specs -->
+  <section id="specs" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Specifications</p>
+          <h2>앱 사양 및 정보</h2>
+        </div>
+      </div>
+
+      <div class="spec-table-shell">
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <th scope="row">앱 이름</th>
+              <td>WakeMedi (웨이크메디 - 스마트 기상 & 복약 루틴 관리)</td>
+            </tr>
+            <tr>
+              <th scope="row">출시 지역</th>
+              <td><strong>글로벌 (전 세계 Google Play 스토어 서비스 중)</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">가격</th>
+              <td><strong style="color: var(--brand-green); font-size: 1.05rem;">100% 무료 (Free)</strong> · 유료 결제나 인앱결제 없이 모든 모닝콜 및 복약 관리 기능 무료 제공</td>
+            </tr>
+            <tr>
+              <th scope="row">개발사</th>
+              <td>79's Labs (친구들랩스)</td>
+            </tr>
+            <tr>
+              <th scope="row">지원 플랫폼</th>
+              <td>Android 8.0 (Oreo, API 26) 이상</td>
+            </tr>
+            <tr>
+              <th scope="row">핵심 알람 기술</th>
+              <td>전화 수신 시뮬레이션(Fake Call Full-Screen Intent), 커스텀 보이스 오디오 재생 엔진</td>
+            </tr>
+            <tr>
+              <th scope="row">복약 관리 기능</th>
+              <td>식전/식후 시간별 스케줄러, 일일 복약 체크, 주간 복약 달성률(Adherence) 통계</td>
+            </tr>
+            <tr>
+              <th scope="row">공유 및 연동</th>
+              <td>QR 코드 스캔 기반 알람 복제, 딥링크(Deep Link) 스케줄 공유</td>
+            </tr>
+            <tr>
+              <th scope="row">데이터 보관 방식</th>
+              <td>100% On-Device 로컬 SQLite DB (서버 전송 없음, 회원가입 불필요)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">FAQ</p>
+          <h2>자주 묻는 질문</h2>
+        </div>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>스마트폰이 무음 모드여도 알람이 울리나요?</h4>
+          <p>네, 시스템 알람 채널 권한을 통해 기기가 무음이거나 방해금지 모드여도 정해진 볼륨으로 확실하게 알람이 울립니다.</p>
+        </div>
+        <div class="faq-item">
+          <h4>회원가입이나 로그인이 필요한가요?</h4>
+          <p>아닙니다. 계정 생성 없이 앱을 설치하자마자 바로 모든 기능을 사용할 수 있으며, 개인정보를 수집하지 않습니다.</p>
+        </div>
+        <div class="faq-item">
+          <h4>복약 기록 데이터를 다른 기기로 옮길 수 있나요?</h4>
+          <p>백업 및 복원 기능을 통해 기기 내 파일로 내보내어 새 기기에서 안전하게 불러올 수 있습니다.</p>
+        </div>
+        <div class="faq-item">
+          <h4>배터리 최적화 설정이 필요한가요?</h4>
+          <p>안드로이드 OS의 백그라운드 절전 정책으로 인해 알람이 지연되지 않도록, 최초 실행 시 배터리 최적화 제외 안내를 제공합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="wrap">
+    <div class="contact-card">
+      <h2>내일 아침부터, 달라진 기상을 경험하세요</h2>
+      <p class="sub">WakeMedi와 함께 규칙적인 기상과 완벽한 복약 습관을 시작해 보세요.</p>
+      <a class="button primary" href="https://play.google.com/store/apps/details?id=com.journeymin.wakemedi" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Google Play에서 무료로 받기
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-nav">
+      <a href="../index.html">스튜디오 홈</a>
+      <a href="../wakemedi/index.html">WakeMedi</a>
+      <a href="../saytence/index.html">Saytence</a>
+      <a href="../bodysignal/index.html">BodySignal</a>
+      <a href="../index.html#maker">만드는 사람</a>
+      <a href="mailto:mintwin79@gmail.com">문의하기</a>
+    </div>
+    <p class="copyright">© 2026 79's Labs (친구들랩스). All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

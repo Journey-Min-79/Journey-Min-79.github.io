@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BodySignal (바디시그널) | 심박변이도(HRV)와 수면으로 읽는 스트레스·회복 기록 - 79's Labs</title>
+<meta name="description" content="심박변이도(HRV), 수면, 안정 시 심박수와 일상 습관을 결합해 내 몸의 스트레스와 회복 상태를 온디바이스로 분석하고 기록하는 헬스케어 앱 BodySignal입니다. 1인 개발자 Journey Min 제작.">
+<meta name="keywords" content="Journey Min, journey min, journeymin, 저니민, BodySignal, 바디시그널, 심박변이도, HRV, 스트레스 측정, 수면 기록, 컨디션 관리, 바이오 시그널, Health Connect, 79's Labs, 친구들랩스">
+<meta name="author" content="Journey Min">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#07111f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7fbff" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../favicon.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png" sizes="180x180">
+<link rel="canonical" href="https://journey-min-79.github.io/bodysignal/">
+
+<!-- Open Graph / SNS -->
+<meta property="og:title" content="BodySignal | 심박변이도(HRV)와 수면으로 읽는 스트레스·회복 기록 - Journey Min">
+<meta property="og:description" content="내 몸이 보내는 신호를 읽고 컨디션의 원인을 이해하세요. 1인 개발자 Journey Min 제작.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://journey-min-79.github.io/bodysignal/">
+<meta property="og:site_name" content="79's Labs">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="BodySignal | 스트레스·회복 기록 (Journey Min)">
+<meta name="twitter:description" content="HRV와 수면 데이터 기반 온디바이스 신체 컨디션 분석 모바일 앱 - 개발자 Journey Min">
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://journey-min-79.github.io/bodysignal/#app",
+      "name": "BodySignal",
+      "alternateName": "바디시그널",
+      "description": "심박변이도(HRV)와 수면, 일상 습관을 결합하여 스트레스와 회복 상태를 기록하는 헬스케어 모바일 애플리케이션",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Android",
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.journey.bodysignal",
+      "author": {
+        "@type": "Person",
+        "name": "Journey Min",
+        "alternateName": ["journey min", "journeymin", "저니민"],
+        "url": "https://journey-min-79.github.io/#maker"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "KRW",
+        "url": "https://play.google.com/store/apps/details?id=com.journey.bodysignal"
+      },
+      "featureList": [
+        "HRV(심박변이도), 안정 시 심박수, 수면 패턴 추세 분석",
+        "스트레스 지수 및 회복 점수 시각화",
+        "습관(카페인, 운동, 알코올), 감정, 신체 신호 다이어리",
+        "Health Connect 및 웨어러블 헬스 데이터 연동",
+        "워치 위젯, 홈 화면 위젯 및 컨디션 상태 알림",
+        "자율신경계 안정을 위한 호흡 가이드 세션",
+        "기기 내 로컬 암호화 보관 및 프라이버시 보호"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "79's Labs",
+          "item": "https://journey-min-79.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "제품 목록",
+          "item": "https://journey-min-79.github.io/#apps"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "BodySignal",
+          "item": "https://journey-min-79.github.io/bodysignal/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
+<nav class="site-nav" aria-label="주요 메뉴">
+  <div class="wrap nav-inner">
+    <a class="nav-brand" href="../index.html" aria-label="79's Labs 홈">
+      <span class="nav-symbol" aria-hidden="true">79</span>
+      <span>79's Labs</span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html#apps">제품 전체</a>
+      <a href="../wakemedi/index.html">WakeMedi</a>
+      <a href="../saytence/index.html">Saytence</a>
+      <a href="../bodysignal/index.html" class="active">BodySignal</a>
+      <a href="../index.html#maker">만드는 사람</a>
+      <a href="../index.html#contact">문의</a>
+    </div>
+    <div class="nav-actions">
+      <a class="nav-store" href="https://play.google.com/store/apps/details?id=com.journey.bodysignal" target="_blank" rel="noopener" aria-label="BodySignal 구글 플레이에서 다운로드">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <span>Google Play</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+  <div class="wrap">
+    <ul class="breadcrumbs" aria-label="현재 위치">
+      <li><a href="../index.html">홈</a></li>
+      <li><a href="../index.html#apps">제품 라인업</a></li>
+      <li aria-current="page">BodySignal</li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="detail-hero">
+    <div class="wrap detail-hero-grid">
+      <div class="detail-hero-copy">
+        <div class="app-brand-badge">
+          <img src="../assets/bodysignal-icon.png" alt="BodySignal 아이콘" width="76" height="76">
+          <div>
+            <h1>BodySignal</h1>
+            <p class="app-category">스트레스 & 바이오 회복 기록</p>
+          </div>
+        </div>
+
+        <p class="detail-lead">
+          피로는 막연한 기분이 아닙니다. <strong>BodySignal(바디시그널)</strong>은 심박변이도(HRV)와 수면 같은 생체 신호에 일상의 습관과 감정 기록을 연결하여, 내 몸의 컨디션이 왜 변화했는지 한눈에 이해하도록 돕습니다.
+        </p>
+
+        <div class="detail-actions">
+          <a class="button primary" href="https://play.google.com/store/apps/details?id=com.journey.bodysignal" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+            Google Play에서 다운로드
+          </a>
+          <span class="badge live">국내(한국) 출시됨 · 글로벌 출시 예정</span>
+        </div>
+
+        <div class="app-meta">
+          <span style="color: var(--brand-blue); border-color: rgba(39, 143, 214, 0.4); font-weight: 750;">한국 출시 (글로벌 순차 런칭 예정)</span>
+          <span style="color: var(--brand-green); border-color: rgba(140, 197, 47, 0.4);">100% 무료 (Free)</span>
+          <span>Health Connect 연동</span>
+          <span>HRV & 수면 분석</span>
+          <span>100% 온디바이스 저장</span>
+        </div>
+      </div>
+
+      <div class="showcase-stage">
+        <div class="phone-mockup">
+          <img src="../assets/bodysignal-mockup.png" alt="BodySignal 스트레스 및 회복 분석 화면" width="1080" height="1920">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features Deep Dive -->
+  <section id="features" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Core features</p>
+          <h2>신체 데이터를 통찰로 바꾸는 기술</h2>
+        </div>
+        <p class="sub">단순한 숫자의 나열이 아니라, 오늘의 휴식과 내일의 에너지를 계획할 수 있는 명확한 기준을 제시합니다.</p>
+      </div>
+
+      <div class="detail-features-grid">
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>HRV 기반 실시간 스트레스 & 회복 스코어</h3>
+          <p>자율신경계 균형을 반영하는 심박변이도(rMSSD/SDNN)와 안정시 심박수(RHR), 수면 효율을 종합해 0~100점의 신체 컨디션 스코어를 온디바이스로 정밀 산출합니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </div>
+          <h3>모닝 브리핑 & 주간 회복 리포트</h3>
+          <p>기상 직후 밤사이의 수면 회복도와 오늘의 활동 권장량을 브리핑하고, 한 주간의 자율신경계 누적 피로도와 스트레스 추이를 알기 쉽게 시각화합니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <h3>생체 신호 이상 징후 (Window Alert)</h3>
+          <p>개인 고유의 생체 베이스라인을 구축하여, 급격한 HRV 저하나 비정상적인 스트레스 피크 등 번아웃 징후를 실시간 감지하고 적절한 휴식을 권고합니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          </div>
+          <h3>습관·감정 다이어리 & 상관관계 분석</h3>
+          <p>카페인, 음주, 야식, 운동, 두통/피로 증상 및 감정 상태를 간단히 기록하면 생체 신호 데이터와 교차 분석하여 개인별 컨디션 저하 원인을 규명합니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 9.17l4.24-4.24M14.83 14.83l4.24 4.24M9.17 14.83l-4.24 4.24"/></svg>
+          </div>
+          <h3>미주신경 자율신경 호흡 가이드</h3>
+          <p>긴장되거나 스트레스 지수가 치솟았을 때, 심박수를 빠르게 안정시키고 부교감신경을 자극하는 시각적 4-7-8 및 박스 호흡 운동 세션을 제공합니다.</p>
+        </div>
+
+        <div class="detail-feature-card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>BYOK AI 코치 & 100% 온디바이스</h3>
+          <p>사용자 개인 API Key(선택)를 안전하게 연동해 민감한 건강 데이터를 외부 서버에 맡기지 않고 나만의 로컬 맞춤형 회복 가이드를 받아볼 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Specs -->
+  <section id="specs" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Specifications</p>
+          <h2>앱 사양 및 정보</h2>
+        </div>
+      </div>
+
+      <div class="spec-table-shell">
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <th scope="row">앱 이름</th>
+              <td>BodySignal (바디시그널 - 스트레스 & 바이오 회복 기록)</td>
+            </tr>
+            <tr>
+              <th scope="row">출시 지역</th>
+              <td><strong>국내(한국) 출시 완료 · 글로벌 순차 런칭 예정</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">가격</th>
+              <td><strong style="color: var(--brand-green); font-size: 1.05rem;">100% 무료 (Free)</strong> · 구독료나 유료 결제 없이 모든 생체 분석 및 호흡 가이드 기능 무료 제공</td>
+            </tr>
+            <tr>
+              <th scope="row">개발사</th>
+              <td>79's Labs (친구들랩스)</td>
+            </tr>
+            <tr>
+              <th scope="row">지원 플랫폼</th>
+              <td>Android 8.0 (Oreo) 이상 (Google Health Connect 연동)</td>
+            </tr>
+            <tr>
+              <th scope="row">생체 분석 지표</th>
+              <td>심박변이도(rMSSD, SDNN), 안정시 심박수(RHR), 수면 단계 및 지속 시간, 일중 스트레스 점수(0~100)</td>
+            </tr>
+            <tr>
+              <th scope="row">연동 웨어러블</th>
+              <td>갤럭시 워치(Galaxy Watch), 핏빗(Fitbit), 가민(Garmin), 스마트링 등 Health Connect 호환 기기</td>
+            </tr>
+            <tr>
+              <th scope="row">컨디션 관리 도구</th>
+              <td>모닝 브리핑, 주간 회복 리포트, 이상 징후 알림(Window Alert), 자율신경 호흡 세션, 상관관계 다이어리</td>
+            </tr>
+            <tr>
+              <th scope="row">데이터 보관 방식</th>
+              <td>100% On-Device 로컬 암호화 데이터베이스 (Drift/SQLite) 저장, 외부 서버 전송 없음</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="border-top: 1px solid var(--border);">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">FAQ</p>
+          <h2>자주 묻는 질문</h2>
+        </div>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>스마트워치가 반드시 있어야 하나요?</h4>
+          <p>심박변이도(HRV)와 수면 자동 측정을 위해서는 스마트워치나 밴드(갤럭시 워치, 핏빗 등)가 권장되지만, 수동 컨디션 및 습관 다이어리 기록은 기기 없이도 가능합니다.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Health Connect는 어떻게 연결하나요?</h4>
+          <p>앱 설치 후 최초 권한 안내에 따라 Google Health Connect 권한을 허용하시면, 기존에 측정된 헬스 데이터가 안전하게 연동됩니다.</p>
+        </div>
+        <div class="faq-item">
+          <h4>측정된 점수는 의학적 진단인가요?</h4>
+          <p>아닙니다. BodySignal은 질병의 진단이나 치료 목적이 아닌 일상적인 웰니스 및 컨디션 관리를 위한 통계 지표를 제공합니다.</p>
+        </div>
+        <div class="faq-item">
+          <h4>내 건강 데이터가 외부로 공유되나요?</h4>
+          <p>아닙니다. 79's Labs는 온디바이스 철학에 따라 사용자의 어떠한 건강 정보도 외부 서버로 전송하거나 수집하지 않습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="wrap">
+    <div class="contact-card">
+      <h2>오늘 내 몸이 보내는 신호에 귀 기울여보세요</h2>
+      <p class="sub">BodySignal과 함께 지치지 않는 하루를 만들어 보세요.</p>
+      <a class="button primary" href="https://play.google.com/store/apps/details?id=com.journey.bodysignal" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Google Play에서 무료로 받기
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-nav">
+      <a href="../index.html">스튜디오 홈</a>
+      <a href="../wakemedi/index.html">WakeMedi</a>
+      <a href="../saytence/index.html">Saytence</a>
+      <a href="../bodysignal/index.html">BodySignal</a>
+      <a href="../index.html#maker">만드는 사람</a>
+      <a href="mailto:mintwin79@gmail.com">문의하기</a>
+    </div>
+    <p class="copyright">© 2026 79's Labs (친구들랩스). All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
